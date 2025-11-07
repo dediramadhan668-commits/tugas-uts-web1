@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Toko Buku Online (BNHA Theme)</title>
+  <link rel="stylesheet" href="CSS NYA/style.css">
+</head>
+<body class="login-page">
+  <!-- efek garis bergerak background -->
+  <div class="hero-stripes" aria-hidden="true"></div>
+
+  <main class="container">
+    <header style="text-align:center;margin-bottom:20px">
+      <h1 class="h1-comic">Toko Buku Online</h1>
+      <p class="small">Masuk untuk melanjutkan ke Dashboard Hero</p>
+    </header>
+
+    <section>
+      <form id="loginForm" novalidate>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="rina@gmail.com" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="rina123" required>
+
+        <button type="submit" class="btn">Masuk</button>
+      </form>
+
+      <div class="flex justify-end small" style="margin-top:14px">
+        <a href="#" id="lupaPassword">Lupa Password</a> |
+        <a href="#" id="daftar">Daftar</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Lupa Password -->
+  <div id="modalLupa" class="modal-root" style="display:none">
+    <div class="modal-card">
+      <span class="modal-close">&times;</span>
+      <h3 style="margin-bottom:10px;color:#ffcc00">Lupa Password</h3>
+      <input type="email" placeholder="Masukkan email anda" required>
+      <button id="kirimReset" class="btn" style="margin-top:10px">Kirim Link Reset</button>
+    </div>
+  </div>
+
+  <!-- Modal Daftar -->
+  <div id="modalDaftar" class="modal-root" style="display:none">
+    <div class="modal-card">
+      <span class="modal-close">&times;</span>
+      <h3 style="margin-bottom:10px;color:#ffcc00">Daftar Akun Baru</h3>
+      <form id="daftarForm">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required minlength="6">
+        <button type="submit" class="btn" style="margin-top:10px">Daftar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="JAVA NYA/data.js"></script>
+  <script src="JAVA NYA/auth.js"></script>
+</body>
+</html>
