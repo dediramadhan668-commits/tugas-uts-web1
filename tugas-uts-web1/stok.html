@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stok Buku - Toko Buku Online</title>
+  <link rel="stylesheet" href="CSS NYA/style.css">
+</head>
+<body>
+  <main class="stok-page">
+    <header class="flex justify-end">
+      <a href="dashboard.html" class="btn secondary">← Dashboard</a>
+    </header>
+
+    <h1>Daftar Buku</h1>
+    <table class="table" id="tabelStok">
+      <thead>
+        <tr>
+          <th>Kode</th>
+          <th>Nama Buku</th>
+          <th>Jenis</th>
+          <th>Edisi</th>
+          <th>Stok</th>
+          <th>Harga</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <section style="margin-top:20px">
+      <h2>Tambah Buku Baru</h2>
+      <form id="formAdd" class="flex" style="flex-wrap:wrap;gap:8px">
+        <input id="kodeBarang" placeholder="Kode" required>
+        <input id="namaBarang" placeholder="Nama Buku" required>
+        <input id="jenisBarang" placeholder="Jenis">
+        <input id="edisi" placeholder="Edisi">
+        <input id="stok" placeholder="Stok" type="number">
+        <button class="btn">Tambah</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="JAVA NYA/data.js"></script>
+  <script src="JAVA NYA/stok.js"></script>
+</body>
+</html>

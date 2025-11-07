@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Toko Buku Online</title>
+  <link rel="stylesheet" href="CSS NYA/style.css">
+</head>
+<body>
+  <main class="checkout">
+    <header class="flex justify-end">
+      <a href="dashboard.html" class="btn secondary">← Dashboard</a>
+    </header>
+
+    <section>
+      <h1>Pemesanan Buku</h1>
+      <form id="formOrder">
+        <label>Nama Lengkap</label>
+        <input id="nama" required>
+        <label>Email</label>
+        <input id="email" type="email" required>
+        <label>Pilih Buku</label>
+        <select id="buku" required></select>
+        <label>Jumlah</label>
+        <input id="jumlah" type="number" min="1" value="1">
+        <label>Metode Pembayaran</label>
+        <select id="pembayaran" required>
+          <option value="">Pilih</option>
+          <option>Transfer Bank</option>
+          <option>E-Wallet</option>
+          <option>COD</option>
+        </select>
+        <button class="btn">Tambah ke Keranjang</button>
+      </form>
+
+      <div id="hasilPesanan" style="margin-top:20px"></div>
+    </section>
+
+    <section style="margin-top:30px">
+      <h2>Keranjang</h2>
+      <table class="table" id="keranjangTable">
+        <thead>
+          <tr><th>Cover</th><th>Buku</th><th>Jumlah</th><th>Harga</th><th>Subtotal</th><th></th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="text-right" style="margin-top:10px">
+        Total: <strong id="totalHarga">Rp 0</strong>
+      </div>
+    </section>
+  </main>
+
+  <script src="JAVA NYA/data.js"></script>
+  <script src="JAVA NYA/checkout.js"></script>
+</body>
+</html>
