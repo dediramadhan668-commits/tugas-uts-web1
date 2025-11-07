@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking Pengiriman - Toko Buku Online</title>
+  <link rel="stylesheet" href="CSS NYA/style.css">
+</head>
+<body>
+  <main class="tracking">
+    <header class="flex justify-end">
+      <a href="dashboard.html" class="btn secondary">← Dashboard</a>
+    </header>
+
+    <section>
+      <h1>Tracking Pengiriman</h1>
+      <div class="flex" style="margin-top:10px">
+        <input id="noDO" placeholder="Masukkan Nomor DO, misal 20230012">
+        <button id="cariTracking" class="btn">Cari</button>
+      </div>
+      <div id="hasilTracking" style="margin-top:20px"></div>
+    </section>
+  </main>
+
+  <script src="JAVA NYA/data.js"></script>
+  <script src="JAVA NYA/tracking.js"></script>
+</body>
+</html>
